@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCSB-Kő-Papír-Olló játék</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Kő-Papír-Olló játék</h1>
+    <h2>Mézes Bence - LMG0LL</h2>
+
+    <div class="choices">
+
+        <div class="choice">
+            <img src="ko.png" onclick="playGame('kő')">
+        </div>
+
+        <div class="choice">
+            <img src="papir.png" onclick="playGame('papír')">
+        </div>
+
+        <div class="choice">
+            <img src="ollo.png" onclick="playGame('olló')">
+        </div>
+
+    </div>
+    
+    <div id="playerDisplay">Ready Player One: </div>
+    <div id="computerDisplay">Azték ellenfél: </div>
+    <div id="resultDisplay"></div>
+
+    <div class="scoreDisplay">Játékos:
+        <span id="playerScoreDisplay">-</span>
+    </div>
+
+    <div class="scoreDisplay">Azték ellenfél pontszám:
+        <span id="computerScoreDisplay">-</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
